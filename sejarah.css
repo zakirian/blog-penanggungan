@@ -1,0 +1,151 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #ffff;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 2.5rem;
+    font-weight: bold;
+    float: left;
+    font-family: courier;
+    color: #123524;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    background: #577BC1;
+    z-index: 1;
+    border-bottom: 1px solid #123524;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    padding: 0 16px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.kolom {
+    margin: 50px 0;
+    flex: 1 1 300px; /* Allow flexibility for responsiveness */
+}
+
+.kolom .deskripsi {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'Comic Sans MS';
+    color: #123524;
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'Comic Sans MS';
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #123524;
+    width: 100%;
+    line-height: 1.5;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .logo a {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        flex: 1 1 100%; /* Stack menu items vertically */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Smaller heading font size */
+    }
+
+    .kolom .deskripsi {
+        font-size: 1rem; /* Smaller description font size */
+    }
+
+    .kolom {
+        margin: 20px 0; /* Adjust column margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    body, .wrapper {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    .logo a {
+        font-size: 1.5rem; /* Even smaller logo font size */
+    }
+
+    h1 {
+        font-size: 1.2rem; /* Even smaller heading font size */
+    }
+
+    .kolom .deskripsi {
+        font-size: 0.9rem; /* Even smaller description font size */
+        line-height: 1.4; /* Adjust line height for readability */
+    }
+
+    section {
+        display: block; /* Stack sections vertically */
+    }
+
+    .kolom {
+        margin: 10px 0; /* Reduce margin between columns */
+        flex: 1 1 100%; /* Columns take full width */
+    }
+}
